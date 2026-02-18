@@ -20,8 +20,15 @@ Route::get('/', function () {
 
 Route::get('/blog', [PostController::class, 'index'])->name('blog.index');
 
+// static pages
+Route::view('/about', 'about')->name('about');
+Route::view('/contact', 'contact')->name('contact');
+
 // Blog routes
 Route::resource('posts', PostController::class);
+
+// Category CRUD
+Route::resource('categories', App\Http\Controllers\CategoryController::class);
 
 Auth::routes();
 
