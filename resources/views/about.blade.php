@@ -61,4 +61,19 @@
     </div>
 </section>
 
+<!-- Gallery section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Our Work in Pictures</h2>
+        <div class="row g-3">
+            @for ($i = 1; $i <= 6; $i++)
+                <div class="col-md-4">
+                    <img src="https://picsum.photos/seed/{{ $i }}/800/600" class="img-fluid rounded shadow-sm" alt="Generated image {{ $i }}">
+                </div>
+            @endfor
+        </div>
+        <p class="text-muted text-center mt-4">Images above are randomly generated placeholders from <a href="https://picsum.photos" target="_blank">Picsum</a>.</p>
+    </div>
+</section>
+
 @endsection
