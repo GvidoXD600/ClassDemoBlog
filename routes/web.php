@@ -24,6 +24,10 @@ Route::get('/blog', [PostController::class, 'index'])->name('blog.index');
 Route::view('/about', 'about')->name('about');
 Route::view('/contact', 'contact')->name('contact');
 
+// contact form submission
+use App\Http\Controllers\ContactController;
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+
 // Blog routes
 Route::resource('posts', PostController::class);
 
