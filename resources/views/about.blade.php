@@ -18,7 +18,7 @@
                 <p class="text-muted">We are committed to providing a clean, modern platform where developers can share tutorials, stories, and insights about server-side development. Our goal is to foster a community of learners and contributors who are passionate about building web applications with Laravel.</p>
             </div>
             <div class="col-md-6">
-                <img src="https://via.placeholder.com/600x400" alt="Our mission" class="img-fluid rounded shadow-sm">
+                <img src="{{ asset('images/mission.svg') }}" alt="Our mission" class="img-fluid rounded shadow-sm">
             </div>
         </div>
     </div>
