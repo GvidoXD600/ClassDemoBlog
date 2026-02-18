@@ -18,7 +18,7 @@
                 <p class="text-muted">We are committed to providing a clean, modern platform where developers can share tutorials, stories, and insights about server-side development. Our goal is to foster a community of learners and contributors who are passionate about building web applications with Laravel.</p>
             </div>
             <div class="col-md-6">
-                <img src="{{ asset('images/mission.svg') }}" alt="Our mission" class="img-fluid rounded shadow-sm">
+                <img src="{{ asset('images/mission.jpg') }}" alt="Our mission" class="img-fluid rounded shadow-sm">
             </div>
         </div>
     </div>
@@ -32,7 +32,7 @@
             <!-- Example team member card -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100 shadow-sm">
-                    <img src="{{ asset('images/team1.svg') }}" class="card-img-top" alt="Team member">
+                    <img src="{{ asset('images/jane.jpg') }}" class="card-img-top" alt="Jane Doe">
                     <div class="card-body text-center">
                         <h5 class="card-title">Jane Doe</h5>
                         <p class="card-text text-muted">Lead Developer</p>
@@ -41,7 +41,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card h-100 shadow-sm">
-                    <img src="{{ asset('images/team2.svg') }}" class="card-img-top" alt="Team member">
+                    <img src="{{ asset('images/john.jpg') }}" class="card-img-top" alt="John Smith">
                     <div class="card-body text-center">
                         <h5 class="card-title">John Smith</h5>
                         <p class="card-text text-muted">Content Strategist</p>
@@ -50,7 +50,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card h-100 shadow-sm">
-                    <img src="{{ asset('images/team3.svg') }}" class="card-img-top" alt="Team member">
+                    <img src="{{ asset('images/alice.jpg') }}" class="card-img-top" alt="Alice Johnson">
                     <div class="card-body text-center">
                         <h5 class="card-title">Alice Johnson</h5>
                         <p class="card-text text-muted">Community Manager</p>
@@ -68,11 +68,11 @@
         <div class="row g-3">
             @foreach (range(1,6) as $i)
                 <div class="col-md-4">
-                    <img src="{{ asset('images/gallery'.$i.'.svg') }}" class="img-fluid rounded shadow-sm" alt="Gallery image {{ $i }}">
+                    <img src="{{ asset('images/gallery'.$i.'.jpg') }}" class="img-fluid rounded shadow-sm" alt="Gallery image {{ $i }}">
                 </div>
             @endforeach
         </div>
-        <p class="text-muted text-center mt-4">Images above are randomly generated placeholders from <a href="https://picsum.photos" target="_blank">Picsum</a>.</p>
+        <p class="text-muted text-center mt-4">Photos courtesy of the team. Replace with your own images as desired.</p>
     </div>
 </section>
 
